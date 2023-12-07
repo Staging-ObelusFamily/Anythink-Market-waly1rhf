@@ -1,6 +1,16 @@
 {
   "name": "Anythink Development Container",
-  "image": "public.ecr.aws/v0a2l7y2/wilco/anythink-devcontainer:latest",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/sshd:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
   "forwardPorts": [3000, 3001, 5433, 27017],
   "portsAttributes": {
     "3000": {
