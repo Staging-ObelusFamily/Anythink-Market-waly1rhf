@@ -1,8 +1,7 @@
 {
   "name": "Anythink Development Container",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
+  "image": "public.ecr.aws/v0a2l7y2/wilco/anythink-devcontainer:latest",
+  "dockerComposeFile": "../docker-compose.yml",
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {},
     "ghcr.io/devcontainers/features/github-cli:1": {},
